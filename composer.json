@@ -1,0 +1,22 @@
+{
+    "name": "aluno/teste_unitario",
+    "description": "Teste unitário",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "tests\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RobDa"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
