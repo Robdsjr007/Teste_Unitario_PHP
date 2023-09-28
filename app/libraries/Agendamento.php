@@ -3,23 +3,23 @@ namespace app\libraries;
 
 class Agendamento{
     private int $numeroAgendamento;
-    private int $data;
+    private string $data;
     private int $hora;
     private string $gravidade;
 
 
-        public function __construct(Int $numeroAgendamento, Int $data, Int $hora, String $gravidade){
+        public function __construct(Int $numeroAgendamento, String $data, Int $hora, String $gravidade){
             $this->numeroAgendamento = $numeroAgendamento;
             $this->data= $data;
             $this->hora = $hora;
             $this->gravidade = $gravidade;
         }
         
-        public function setNumeroA($numeroAgendamento){
+        public function setNumeroAgendamento($numeroAgendamento){
             $this->numeroAgendamento = $numeroAgendamento;
         }
 
-        public function getNumeroA(){
+        public function getNumeroAgendamento(){
             return $this->numeroAgendamento;
         }
 

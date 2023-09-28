@@ -59,7 +59,7 @@
 
         public function testSetCrm(){
             $p1 = new Medico(1, "Rogério", 11991134786, "Rua carlos almeida, 53");
-            $p1->setName(1);
+            $p1->setCrm(1);
             $this->assertEquals(1, $p1->getCrm());
         }
     }
