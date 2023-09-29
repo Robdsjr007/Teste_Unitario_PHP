@@ -7,7 +7,6 @@ class Agendamento{
     private int $hora;
     private string $gravidade;
 
-
         public function __construct(Int $numeroAgendamento, String $data, Int $hora, String $gravidade){
             $this->numeroAgendamento = $numeroAgendamento;
             $this->data= $data;

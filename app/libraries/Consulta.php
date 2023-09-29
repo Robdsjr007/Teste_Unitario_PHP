@@ -5,11 +5,18 @@ class Consulta{
     private int $numeroConsulta;
     private string $data;
     private int $hora;
+    private $agendamento;
+    private $medico;
+    private $paciente;
 
-        public function __construct(Int $numeroConsulta, String $data, Int $hora){
+        public function __construct(Int $numeroConsulta, String $data, Int $hora, $agendamento, $medico, $paciente){
             $this->numeroConsulta = $numeroConsulta;
             $this->data= $data;
             $this->hora = $hora;
+            $this->agendamento = $agendamento;
+            $this->medico = $medico;
+            $this->paciente = $paciente;
+
         }
         
         public function setNumeroConsulta($numeroConsulta){

@@ -4,15 +4,17 @@ namespace app\libraries;
 class Medico{
     private int $CRM;
     private string $name;
-    private int $telefone;
+    private $telefone;
     private string $endereco;
+    private $especialidade;
 
 
-        public function __construct(Int $CRM, String $name, Int $telefone, String $endereco){
+        public function __construct( $CRM, String $name, $telefone, String $endereco, $especialidade){
             $this->crm = $CRM;
             $this->name = $name;
             $this->telefone = $telefone;
             $this->endereco = $endereco;
+            $this->especialidade = $especialidade;
         }
         
         public function setCrm($CRM){

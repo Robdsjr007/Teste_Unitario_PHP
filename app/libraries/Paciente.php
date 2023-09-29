@@ -4,11 +4,11 @@ namespace app\libraries;
 class Paciente{
     private int $numeroBeneficiario;
     private string $name;
-    private int $telefone;
+    private  $telefone;
     private string $endereco;
 
 
-        public function __construct(Int $numeroBeneficiario,String $name, Int $telefone, String $endereco){
+        public function __construct( $numeroBeneficiario,String $name, $telefone, String $endereco){
             $this->numeroBeneficiario = $numeroBeneficiario;
             $this->name = $name;
             $this->telefone = $telefone;

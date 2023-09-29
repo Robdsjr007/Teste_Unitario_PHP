@@ -8,17 +8,17 @@ class Especialidade{
 
 
         public function __construct(Int $numeroRegistro, String $name, String $publicoAlvo){
-            $this->numeroRegistro = $numeroRegistro;
+            $this->numeroR = $numeroRegistro;
             $this->name = $name;
             $this->publicoAlvo = $publicoAlvo;
         }
         
         public function setNumeroRegistro($numeroRegistro){
-            $this->numeroRegistro = $numeroRegistro;
+            $this->numeroR = $numeroRegistro;
         }
 
         public function getNumeroRegistro(){
-            return $this->numeroRegistro;
+            return $this->numeroR;
         }
 
         public function setName($name){
