@@ -3,14 +3,14 @@ namespace app\libraries;
 
 class Paciente{
     private int $numeroBeneficiario;
-    private string $name;
+    private string $nome;
     private  $telefone;
     private string $endereco;
 
 
-        public function __construct( $numeroBeneficiario,String $name, $telefone, String $endereco){
+        public function __construct( $numeroBeneficiario,String $nome, $telefone, String $endereco){
             $this->numeroBeneficiario = $numeroBeneficiario;
-            $this->name = $name;
+            $this->nome = $nome;
             $this->telefone = $telefone;
             $this->endereco = $endereco;
         }
@@ -23,12 +23,12 @@ class Paciente{
             return $this->numeroBeneficiario;
         }
 
-        public function setName($name){
-            $this->name = $name;
+        public function setNome($nome){
+            $this->nome = $nome;
         }
 
-        public function getName(){
-            return $this->name;
+        public function getNome(){
+            return $this->nome;
         }
 
         public function setTelefone($telefone){

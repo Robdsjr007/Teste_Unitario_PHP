@@ -13,10 +13,10 @@
             $this->assertEquals(1, $p1->getCrm());
         }
 
-        public function testMedicoName(){
+        public function testMedicoNome(){
             $p2 = new Medico(1, "Rogério", 11991134786, "Rua carlos almeida, 53", new Especialidade(1, "Rogério", "Nerd"));
 
-            $this->assertEquals("Rogério", $p2->getName());
+            $this->assertEquals("Rogério", $p2->getNome());
         }
 
         public function testMedicoTelefone(){
@@ -52,10 +52,10 @@
         }
 
 
-        public function testSetName(){
+        public function testSetNome(){
             $p1 = new Medico(1, "Rogério", 11991134786, "Rua carlos almeida, 53", new Especialidade(1, "Rogério", "Nerd"));
-            $p1->setName('Rogérinho');
-            $this->assertEquals("Rogérinho", $p1->getName());
+            $p1->setNome('Rogérinho');
+            $this->assertEquals("Rogérinho", $p1->getNome());
         }
 
         public function testSetCrm(){

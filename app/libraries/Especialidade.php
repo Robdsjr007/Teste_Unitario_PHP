@@ -3,30 +3,30 @@ namespace app\libraries;
 
 class Especialidade{
     private int $numeroRegistro;
-    private string $name;
+    private string $nome;
     private string $publicoAlvo;
 
 
-        public function __construct(Int $numeroRegistro, String $name, String $publicoAlvo){
-            $this->numeroR = $numeroRegistro;
-            $this->name = $name;
+        public function __construct(Int $numeroRegistro, String $nome, String $publicoAlvo){
+            $this->numeroRegistro = $numeroRegistro;
+            $this->nome = $nome;
             $this->publicoAlvo = $publicoAlvo;
         }
         
         public function setNumeroRegistro($numeroRegistro){
-            $this->numeroR = $numeroRegistro;
+            $this->numeroRegistro = $numeroRegistro;
         }
 
         public function getNumeroRegistro(){
-            return $this->numeroR;
+            return $this->numeroRegistro;
         }
 
-        public function setName($name){
-            $this->name = $name;
+        public function setNome($nome){
+            $this->nome = $nome;
         }
 
-        public function getName(){
-            return $this->name;
+        public function getNome(){
+            return $this->nome;
         }
 
         public function setPublicoAlvo($publicoAlvo){
