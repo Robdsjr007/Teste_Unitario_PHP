@@ -1,6 +1,6 @@
 <?php
     use app\libraries\Agendamento; 
-    require '../../class\Agendamento.php';
+    require '../../app/libraries/Agendamento.php';
     require '../conexao.php';
     $conexao = conectar();
     
